@@ -13,6 +13,10 @@ double kurang(double a, double b) {
 	return a - b;
 }
 
+double kali(double a, double b) {
+	return a * b;
+}
+
 int main() {
 	int pilihan;
 	double angka1, angka2;
@@ -21,6 +25,7 @@ int main() {
 	printf("----------------------\n");
 	printf("1. Tambah\n");
 	printf("2. Kurang\n");
+	printf("3. Kali\n");
 
 	printf("Masukkan pilihan Anda : ");
 	scanf("%d", &pilihan);
@@ -41,7 +46,11 @@ int main() {
 			printf("Hasil pengurangan : ");
 			printf("%.1f\n", kurang(angka1, angka2));
 			break;
-			
+		
+		case 3 : 
+			printf ("Hasil perkalian :");
+			printf("%.1f\n", kali(angka1,angka2));
+			break;
 	}
 	return 0;
 }
